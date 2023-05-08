@@ -1,0 +1,352 @@
+/* -------------------------------------------------------------------------------------------- */
+/* Apply in All */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font:3px solid var(--b);
+    }
+    
+    /* -------------------------------------------------------------------------------------------------- */
+    
+    /* Header Section */
+    #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+    color:white;
+    position: fixed;
+    height:10%;
+    width:100%;
+    top:0;
+    left:0;
+    box-shadow:15px 15px 30px .5px rgb(133, 202, 224);
+    }
+    #header .headingone{
+        padding-left:2rem;
+        font:2rem solid;
+    }
+    #header .serch{
+        font:2rem solid;
+        border-radius:20px;
+        padding:0px 15px;
+    }
+    #header .information{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right:2rem;
+    }
+    #header .information p,i{
+        padding:0px 10px;
+    }
+    
+    /* ------------------------------------------------------------------------------------------------------ */
+    
+    /* Navigation-bar */
+    #navigation-bar{
+    position: fixed;
+    top:4.6rem;
+    left:0;
+    background-color: rgb(25, 25, 25);
+    height:10%;
+    width:100%;
+    }
+    #navigation-bar .navbar .unordered-list{
+        display: flex;
+        padding:25px;
+    }
+    #navigation-bar .navbar .unordered-list .list{
+        padding-left:4rem;
+        list-style: none;
+        position: relative;
+    }
+    #navigation-bar .navbar .unordered-list .list .outer-color{
+        text-decoration: none;
+        font:20px solid;
+        color:rgb(232, 225, 225);
+    }
+    #home-hover a:hover::after{
+        content:"";
+        position: absolute;
+        background-color: rgb(223, 155, 194);
+        color:rgb(243, 238, 241);
+        height: 4px;
+        width:50%;
+        top:20px;
+        right:.3px; 
+        box-shadow:1px 2px 3px rgb(80, 43, 226);
+        border-radius: 2px;  
+    }
+    .unordered-list-a-span{
+    color:red;
+    }
+    .list .un{
+        box-sizing: border-box;
+        height: 100vh;
+        width:200%;
+        position: absolute;
+        font: 1.2rem solid;
+        background-color:rgb(251, 247, 247);
+        z-index: 200px;
+        opacity: 0.8rem;
+        border-radius: 20px;
+        padding-top:13px;
+        display: none;
+    } 
+    .list .un li{
+        list-style: none;
+        /* display: none; */
+        padding:10px 10px;
+    }
+    .list .un li a{
+        color:rgb(248, 248, 247);
+        text-decoration: none;
+        /* padding-left: 9px; */
+    } 
+    .unordered-list .list:hover .un{
+    display:block;
+    background-color: rgb(9, 8, 8);
+    box-shadow: 2px 2px 5px 6px white;
+    }
+    
+    /* ------------------------------------------- */
+    /* Motor Section*/
+    .unordered-motors{
+        box-sizing: border-box;
+        height: 40vh;
+        width:100%;
+        position: absolute;
+        font: 1.2rem solid;
+        background-color:rgb(10, 9, 9);
+        z-index: 200px;
+        opacity: 0.8rem;
+        border-radius: 20px;
+        padding-top:10px;
+        margin-left:12rem;
+        display: none;
+    }
+     .unordered-motors-list{
+        font:20px solid;
+    }
+    .unordered-motors .unordered-motors-list a{
+        color:rgb(245, 244, 241);
+        background-color:rgb(9, 7, 7);
+        text-decoration: none;
+        /* padding-left: 9px; */
+    } 
+    .un #motors-hover:hover .unordered-motors{
+      display: block;
+      background-color: black;
+      box-shadow: 2px 2px 5px 6px white;
+    }
+    /* Motor hover Effect */
+    .un li a:hover{
+    display: block;
+    color:orange;
+    font:3rem solid;
+    }
+    
+    
+    /* ------------------------------------ */
+    /* Arduino Section in Navigationbar */
+    .arduino{
+        box-sizing: border-box;
+        height: 40vh;
+        width:100%;
+        position: absolute;
+        font: 1.2rem solid;
+        background-color:rgb(250, 245, 245);
+        z-index: 200px;
+        opacity: 0.8rem;
+        border-radius: 20px;
+        padding-top:10px;
+        /* margin-bottom: 15rem; */
+        margin-left:12rem;
+        display: none;
+    }
+     .arduino-list{
+        /* color:black; */
+        /* list-style: none; */
+        font:20px solid;
+        
+        /* padding-left:20rem; */
+    }
+    .arduino-list a{
+        color:rgb(9, 7, 7);
+        text-decoration: none;
+        /* padding-left: 9px; */
+    } 
+    
+    /* Arduino hover Effect */
+    .unordered-list #list:hover .arduino{
+        display: block;
+        background-color: rgb(9, 8, 8);
+        box-shadow: 2px 2px 5px 6px white;
+        }
+    
+    /* --------------------------------------- */
+    /* ------------------------------------ */
+    /* Wire Section in Navigationbar */
+    .unordered-wire{
+        box-sizing: border-box;
+        height: 40vh;
+        width:100%;
+        position: absolute;
+        font: 1.2rem solid;
+        background-color:rgb(250, 245, 245);
+        z-index: 200px;
+        opacity: 0.8rem;
+        border-radius: 20px;
+        padding-top:10px;
+        margin-left:12rem;
+        display: none;
+    }
+     .wire-list{
+        font:20px solid;
+    }
+    .wire-list a{
+        color:rgb(9, 7, 7);
+        text-decoration: none;
+    } 
+    /* wire hover Effect */
+    #list:hover .unordered-wire{
+        display: block;
+        color:orange;
+        background-color: rgb(9, 8, 8);
+        box-shadow: 2px 2px 5px 6px white;
+        }
+    
+    /* --------------------------------------- */
+    /* ------------------------------------ */
+    /* Sensors Section in Navigationbar */
+    .unordered-sensors{
+        box-sizing: border-box;
+        height:100vh;
+        width:100%;
+        position:absolute;
+        font: 1.2rem solid;
+        background-color:rgb(250, 245, 245);
+        z-index: 200px;
+        opacity: 0.8rem;
+        border-radius: 20px;
+        margin-left:12rem;
+        display: none;
+    }
+    .sensor-list{
+        font:20px solid;
+    }
+    .sensor-list a{
+        color:rgb(9, 7, 7);
+        text-decoration: none;
+    } 
+    /* wire hover Effect */
+    #list:hover .unordered-sensors{
+        display: block;
+        color:orange;
+        background-color: rgb(9, 8, 8);
+        box-shadow: 2px 2px 5px 6px white;
+        }
+ /*--------------------------------------------------------------------------------*/
+ /* DC Motor Section */
+ #selections{
+ position: absolute;
+ top:29%;
+ opacity:0.8rem;
+ z-index: -1;
+}
+/* Sizes of first div image */
+#selections .options .buttons img{
+    height:50%;
+    width:45%;
+    border-radius: 20px;
+    padding:10px;
+}
+/* Sizes of second div image */
+#selections .optionstwo .buttons img{
+    height:50%;
+    width:65%;
+    border-radius: 20px;
+    padding:10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor:pointer; 
+ }
+ .background-colorone{
+    box-sizing: border-box;
+    background-color: rgb(176, 173, 173);
+    position: relative;
+    margin:10px 90px;
+    padding:40px 10px;
+    border-radius: 10px;
+ }
+ .background-colorone:hover{
+    background:linear-gradient(60deg,rgb(123, 54, 123) 30%,rgb(90, 90, 181) 40%);
+    box-shadow: 1px 1px 5px 5px rgb(215, 168, 59);
+ }
+ .buttons button{
+    padding:10px;
+    margin:10px;
+    width:15rem;
+    font:1.3rem solid;
+    cursor: pointer;
+    color:white;
+    background-color: transparent;
+ }
+ .buttons button:hover{
+    background-color: rgb(233, 170, 54);
+ }
+ #selections .options,.optionstwo{
+display: grid;
+grid-template-columns: 30rem 30rem 30rem;
+ }
+ /* ------------------------------------------------------------------------------------------------ */
+
+/* Footer Section*/
+#footer{
+    position:absolute;
+    top:95rem;
+    background-color: rgb(74, 72, 72);
+    color:white;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.8rem;
+}
+#footer center .footer-para{
+    font:2rem solid;
+    position: relative;
+    top:2rem;
+}
+#footer .foot iframe{
+    height:11em;
+    width:20em;
+    border-radius: 20px;
+}
+#footer .foot{
+    display:flex;
+    justify-content: space-evenly;
+    font:2rem solid;
+    position:relative;
+    top:9rem;
+}
+#footer .foot .foot-info p,i{
+    padding:20px;
+}
+#footer .social-media{
+    position: relative;
+    top:10rem;
+}
+#footer .social-media a{
+    color:white;
+}
+#footer .social-media a:hover{
+    color:orange;
+    position:relative;
+    bottom:5px;
+}

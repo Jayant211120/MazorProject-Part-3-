@@ -1,0 +1,200 @@
+/* --------------------------------------------------------------------------------------------
+/* Apply in All */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font:3px solid var(--b);
+}
+/* -------------------------------------------------------------------------------------------------- */
+    
+    /* Header Section */
+    #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+    color:white;
+    position: fixed;
+    height:10%;
+    width:100%;
+    top:0;
+    left:0;
+    box-shadow:15px 15px 30px .5px rgb(133, 202, 224);
+    }
+    #header .headingone{
+        padding-left:2rem;
+        font:2rem solid;
+    }
+    #header .serch{
+        font:2rem solid;
+        border-radius:20px;
+        padding:0px 15px;
+    }
+    #header .information{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right:2rem;
+    }
+    #header .information p,i{
+        padding:0px 10px;
+    }
+    
+    /* ------------------------------------------------------------------------------------------------------ */
+    
+    /* Navigation-bar */
+    #navigation-bar{
+    position: fixed;
+    top:4.6rem;
+    left:0;
+    background-color: rgb(25, 25, 25);
+    height:10%;
+    width:100%;
+    }
+    #navigation-bar .navbar .unordered-list{
+        display: flex;
+        padding:25px;
+    }
+    #navigation-bar .navbar .unordered-list .list{
+        padding-left:4rem;
+        list-style: none;
+        position: relative;
+    }
+    #navigation-bar .navbar .unordered-list .list .outer-color{
+        text-decoration: none;
+        font:20px solid;
+        color:rgb(232, 225, 225);
+    }
+    #home-hover a:hover::after{
+        content:"";
+        position: absolute;
+        background-color: rgb(223, 155, 194);
+        color:rgb(243, 238, 241);
+        height: 4px;
+        width:50%;
+        top:20px;
+        right:.3px; 
+        box-shadow:1px 2px 3px rgb(80, 43, 226);
+        border-radius: 2px;  
+    }
+    .unordered-list-a-span{
+    color:red;
+    }
+    .list .un{
+        box-sizing: border-box;
+        height: 100vh;
+        width:200%;
+        position: absolute;
+        font: 1.2rem solid;
+        background-color:rgb(251, 247, 247);
+        z-index: 200px;
+        opacity: 0.8rem;
+        border-radius: 20px;
+        padding-top:13px;
+        display: none;
+    } 
+    .list .un li{
+        list-style: none;
+        /* display: none; */
+        padding:10px 10px;
+    }
+    .list .un li a{
+        color:rgb(248, 248, 247);
+        text-decoration: none;
+        /* padding-left: 9px; */
+    } 
+    .unordered-list .list:hover .un{
+    display:block;
+    background-color: rgb(9, 8, 8);
+    box-shadow: 2px 2px 5px 6px white;
+    }
+    
+    /* ------------------------------------------- */
+    /* Motor Section*/
+    #insideimage{
+       display: flex;
+       flex-direction: row;
+       position: absolute; 
+       z-index: -1;
+       opacity: 0.8rem;
+    }
+    #insideimage .bigimage img{
+        position: absolute;
+        top:12rem;
+        left:10rem;
+        height:30rem;
+        width:25rem; 
+        border-radius: 40px;   
+    } 
+    .imagecontent{
+        position: absolute;
+        top:12rem;
+        left:50rem;
+        font:30px solid;
+    }
+    .starsrow{
+        display: flex;
+        flex-direction: row;
+    }
+    .stars{
+        display: flex;
+        flex-direction: column;
+        padding:1rem 0;
+    }
+    .btn{
+        width:20rem;
+        margin:10px;
+        border-radius: 10px;
+    }
+    .btn:hover{
+        background-color: orange;
+        color:white;
+    }
+    .symbols{
+        padding:40px 0px;
+    }
+
+/* Footer Section*/
+#footer{
+    position:absolute;
+    top:125rem;
+    background-color: rgb(74, 72, 72);
+    color:white;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.8rem;
+}
+#footer center .footer-para{
+    font:2rem solid;
+    position: relative;
+    top:2rem;
+}
+#footer .foot iframe{
+    height:11em;
+    width:20em;
+    border-radius: 20px;
+}
+#footer .foot{
+    display:flex;
+    justify-content: space-evenly;
+    font:2rem solid;
+    position:relative;
+    top:9rem;
+}
+#footer .foot .foot-info p,i{
+    padding:20px;
+}
+#footer .social-media{
+    position: relative;
+    top:10rem;
+}
+#footer .social-media a{
+    color:white;
+}
+#footer .social-media a:hover{
+    color:orange;
+    position:relative;
+    bottom:5px;
+} 
